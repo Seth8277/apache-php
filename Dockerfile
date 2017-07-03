@@ -1,4 +1,4 @@
-FROM 7.1.4-apache
+FROM php:7.1.4-apache
 
 MAINTAINER Seth8277 mail@imseth.cn
 
