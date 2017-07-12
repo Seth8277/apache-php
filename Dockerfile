@@ -3,6 +3,7 @@ FROM php:7.1.4-apache
 MAINTAINER Seth8277 mail@imseth.cn
 
 RUN a2enmod rewrite  \
+	&& a2enmod headers \
     && apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
