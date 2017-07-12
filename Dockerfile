@@ -11,7 +11,7 @@ RUN a2enmod rewrite  \
         libpng12-dev \
         git \
         unzip \
-    && docker-php-ext-install -j$(nproc) iconv mcrypt pdo_mysql zip\
+    && docker-php-ext-install -j$(nproc) iconv mcrypt pdo_mysql\
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install -j$(nproc) gd \
 	&& rm -rf /var/lib/apt/lists/*
